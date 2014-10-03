@@ -1,0 +1,42 @@
+extends ../layout
+
+block content
+
+    
+    .row.profileRow
+        .col-md-4
+        .profilePictureWrapper.col-md-1
+            img.profilePicture(src="#{user.profile.picture}")
+        .profileInformationWrapper.col-md-3
+            strong.profileUserName #{user.profile.name}
+            p.articleCount 17 makale yayınladı
+            .label.label-primary.profileInterestLabelFirst #javascript
+            .label.label-primary.profileInterestLabel #nodeJs 
+        .col-md-4
+            
+    .row
+        .col-md-4
+        .col-md-4
+            h4.bioHeader Bio
+                p.userBio bilgisayar mühendisliği öğrencisi, web geliştiricisi, blogger
+            h4.articlesHeader Makaleler
+                ul.articleList
+                 li.articleListItem
+                    a PassportJs ile Authentication
+                 li.articleListItem
+                    a Mongoose ile İlişkisel Sorgular
+                 li.articleListItem 
+                    a NodeJs childProcess() ve multiThread Programlama
+                 li.articleListItem 
+                    a SpeakingUrl ile SEO dostu urller
+                 li.articleListItem
+                    a Apache Maven kurulumu ve Intellij IDE entegrasyonu
+                 <br>
+                 a tüm makaleler 
+            h4.socials Sosyal Ağlar
+                ul.socialLinks
+                 li.socialItem facebook.com/frknbasaran
+                 li.socialItem twitter.com/frknbasaran
+                 li.socialItem github.com/frknbasaran
+                 li.socialItem furkanbasaran.com
+                 li.socialItem frknbasaran@gmail.com
